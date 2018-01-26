@@ -1,23 +1,156 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Convargo</title>
+    <title>Camtar</title>
+
+    <!--Specificate meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Load css fondation-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
   </head>
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+
+
+
+
+        <!-- Start Top Bar -->
+        <div class="fixed">
+        <div class="top-bar">
+          <div class="row">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">CAMTAR</li>
+                <li class="has-submenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trucks">Trucks</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#bill">Bill</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- End Top Bar -->
+        <br>
+        <!-- You can now combine a row and column if you just need a 12 column row -->
+
+
+          <div class="callout large" id="home">
+            <div class="row column text-center">
+              <h1>Avec <b>CAMTAR</b> <br>Il n'y a pas de <b>retard</b>.</h1>
+              <p class="lead">French Delivery Start-up</p>
+              <a href="#trucks" class="button large">See trucks</a>
+              <a href="#bill" class="button large hollow">Simulate a bill</a>
+            </div>
+          </div>
+
+
+
+
+        <div class="column row" id="trucks">
+
+          </ul>
+          <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+              <h4>Reviews</h4>
+              <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                  <img class="thumbnail" src="img/truck_04.jpg" width="300">
+                </div>
+                <div class="media-object-section">
+                  <h5>Dockyard</h5>
+                  <p> Nobilium nobilium nobilium ita ita inminuto haec ad manibus instituta cum rogati quidam tutius sunt dextris vel haec nobilium sunt nobilium vel quidam ubi nobilium vel dextris ita quidam nuptias sunt observentur inminuto observentur nobilium Spoletium tutius Spoletium pergunt artuum.  </div>
+              </div>
+              <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                  <img class="thumbnail" src="img/truck_05.jpg" width="300">
+                </div>
+                <div class="media-object-section">
+                  <h5>Goods</h5>
+                  <p>Nobilium nobilium nobilium ita ita inminuto haec ad manibus instituta cum rogati quidam tutius sunt dextris vel haec nobilium sunt nobilium vel quidam ubi nobilium vel dextris ita quidam nuptias sunt observentur inminuto observentur nobilium Spoletium tutius Spoletium pergunt artuum.</p>
+                </div>
+              </div>
+              <div class="media-object stack-for-small">
+                <div class="media-object-section">
+                  <img class="thumbnail" src="img/truck_06.jpeg" width="300">
+                </div>
+                <div class="media-object-section">
+                  <h5>Farm</h5>
+                  <p>Nobilium nobilium nobilium ita ita inminuto haec ad manibus instituta cum rogati quidam tutius sunt dextris vel haec nobilium sunt nobilium vel quidam ubi nobilium vel dextris ita quidam nuptias sunt observentur inminuto observentur nobilium Spoletium tutius Spoletium pergunt artuum.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <hr>
+
+        <div class="callout large bg_panel" id="stats">
+          <ul class="vertical medium-horizontal menu expanded text-center row">
+            <li><a href="#"><div class="stat">0</div><span>Accident</span></a></li>
+            <li><a href="#"><div class="stat">99%</div><span>Satisfactions</span></a></li>
+            <li><a href="#"><div class="stat">152</div><span>Commands per day</span></a></li>
+            <li><a href="#"><div class="stat">1th</div><span>Mondial classement</span></a></li>
+          </ul>
+        </div>
+
+          <hr>
+
+        <div class="row" id="bill">
+          <div class="medium-6 columns">
+            <div id="trucker">
+              <input class="name" type="text" placeholder="Trucker name"/>
+              <input class="price-by-km" type="number" placeholder="Price by km"/>
+              <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+            </div>
+            <div id="shipper">
+              <input class="name" type="text" placeholder="Shipper name"/>
+              <input class="distance" type="number" placeholder="Distance in km"/>
+              <input class="volume" type="number" placeholder="Volume in m3"/>
+              <input class="option" type="checkbox" placeholder="Deductible option"> Deductible</input>
+            </div>
+          </div>
+          <div class="medium-6 large-5 columns">
+            <div id="actors"></div>
+          </div>
+        </div>
+        <div class ="row text-center">
+            <a id="compute" class="button large">COMPUTE</a>
+        </div>
+
+        <div class="row column">
+          <hr>
+          <ul class="menu">
+            <li class="float-right">Copyright Camtar</li>
+          </ul>
+        </div>
+
+
+
+
     <script src="convargo.js"></script>
     <script src="index.js"></script>
+
+    <!--Load JavaScript for fondation-->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+    $(document).foundation();
+    </script>
+
+
+
+
   </body>
 </html>

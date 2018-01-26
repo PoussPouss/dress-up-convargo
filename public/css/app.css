@@ -1,0 +1,13 @@
+.bg_panel{
+  background-color: #FFFFFF
+}
+
+.bill_string
+{
+  font-style: italic;
+}
+
+#bill_header_bill{
+  font-size: 25px;
+  font-style: bold;
+}
