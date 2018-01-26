@@ -1,6 +1,26 @@
 /* global CONVARGO*/
 'use strict';
 
+
+function generateDate(){
+  var date = new Date();
+  var str = "";
+  str += (date.getMonth() + 1) + "/";
+  str += date.getDate() + "/";
+  str += date.getFullYear();
+  str += " at "+twoDigits(date.getHours());
+  str += ":"+twoDigits(date.getMinutes());
+  return str
+}
+
+function twoDigits(value){
+  var str = value
+  if(value < 10){
+    str = "0"+str;
+  }
+  return str
+}
+
 (() => {
   const render = (actors) => {
     const fragment = document.createDocumentFragment();
@@ -17,7 +37,7 @@
     }).join('');
     const header = '<div class="row text-center large" id="bill_header_bill">Bill</div>'
     const industry = '<div class="medium-6 columns row large text-left">Camtar Industry</div>'
-    const date = '<div class="medium-6 columns row large text-left">The 22/02/2018 at 1:00 am</div>'
+    const date = '<div class="medium-6 columns row large text-left">The '+generateDate()+'</div>'
     div.innerHTML = "<hr>"+header+"<hr>"+industry+date+"<hr>"+template+"<hr>";
     fragment.appendChild(div);
     document.querySelector('#actors').innerHTML = '';

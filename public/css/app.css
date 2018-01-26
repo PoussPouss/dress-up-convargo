@@ -11,3 +11,9 @@
   font-size: 25px;
   font-style: bold;
 }
+
+.media-object{
+  > .media-object-section {
+    vertical-align: middle;
+  }
+}
