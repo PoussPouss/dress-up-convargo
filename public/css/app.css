@@ -12,8 +12,25 @@
   font-style: bold;
 }
 
+#bill_result{
+  box-shadow: 5px 5px 5px 5px grey;
+  padding: 10px;
+  margin: 20px;
+  display : none;
+}
+
 .media-object{
   > .media-object-section {
     vertical-align: middle;
   }
+}
+
+.subtitle{
+  font-size: 30px;
+  font-weight: 500;
+  color : #309AE9;
+}
+
+#send{
+  display : none;
 }

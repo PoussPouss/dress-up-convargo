@@ -42,6 +42,10 @@ function twoDigits(value){
     fragment.appendChild(div);
     document.querySelector('#actors').innerHTML = '';
     document.querySelector('#actors').appendChild(fragment);
+
+    document.querySelector('#send').style.display = 'block';
+    document.querySelector('#bill_result').style.display = 'block';
+
   };
 
   const button = document.querySelector('#compute');
@@ -57,4 +61,12 @@ function twoDigits(value){
 
     return;
   });
+
+
+const button_send = document.querySelector('#send_button');
+
+button_send.addEventListener('click',function onClick(){
+  alert("Backend service is preparing")
+});
+
 })();
