@@ -30,14 +30,15 @@ function twoDigits(value){
         <div class="actor row">
           <span class="medium-3 columns bill_string">${actor.who}</span>
           <span class="medium-3 columns bill_string">${actor.type}</span>
+          <span class="medium-3 columns bill_string">............</span>
           <span class="medium-3 columns bill">${actor.amount}</span>
         </div>
 
       `;
     }).join('');
     const header = '<div class="row text-center large" id="bill_header_bill">Bill</div>'
-    const industry = '<div class="medium-6 columns row large text-left">Camtar Industry</div>'
-    const date = '<div class="medium-6 columns row large text-left">The '+generateDate()+'</div>'
+    const industry = '<div class="medium-12 columns row large text-left">**Camtar Industry**</div>'
+    const date = '<div class="medium-12 columns row large text-left">**The '+generateDate()+'**</div>'
     div.innerHTML = "<hr>"+header+"<hr>"+industry+date+"<hr>"+template+"<hr>";
     fragment.appendChild(div);
     document.querySelector('#actors').innerHTML = '';
